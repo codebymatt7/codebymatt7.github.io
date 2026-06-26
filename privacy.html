@@ -16,7 +16,7 @@
   </nav>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="muted"><strong>Effective date:</strong> June 24, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> June 24, 2026</p>
+    <p class="muted"><strong>Effective date:</strong> June 24, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> June 26, 2026</p>
 
     <p class="lede">OpenAd is built to help you use your phone more intentionally, so
        privacy is central to how it works. The app has no account and no server of ours
@@ -38,6 +38,9 @@
         <li><strong>Screen Time data is never transmitted</strong> to us or to advertisers.</li>
         <li><strong>Ads are served by third-party ad partners</strong>, which collect
             limited device data to show rewarded ads.</li>
+        <li><strong>We use privacy-respecting product analytics</strong> (PostHog) to count
+            app opens and feature usage. It never receives your Screen Time data and isn't
+            used to track you across other apps.</li>
         <li><strong>We don't sell your personal data.</strong></li>
       </ul>
     </div>
@@ -66,15 +69,24 @@
        identifiers, IP address, coarse location, and ad-interaction data, as described in
        that partner's privacy policy. <strong>We never provide ad partners with your
        Screen Time or app-selection data.</strong></p>
-    <p>Depending on your choice in Apple's <strong>App Tracking Transparency</strong>
-       prompt, these ads may be personalized or non-personalized. You can change this at
-       any time in iOS <em>Settings → Privacy &amp; Security → Tracking</em>. Ads are also
+    <p>OpenAd's current ad partner (Liftoff Monetize) does not use Apple's advertising
+       identifier (IDFA), so the App does not show an App Tracking Transparency prompt and
+       does not track you across other apps or websites. If we add an advertising partner
+       that uses the IDFA, the App will ask your permission first through Apple's
+       <strong>App Tracking Transparency</strong> prompt, and you can change your choice at
+       any time in iOS <em>Settings → Privacy &amp; Security → Tracking</em>. Ads are
        attributed using Apple's privacy-preserving SKAdNetwork.</p>
 
     <h3>d. Diagnostics &amp; analytics</h3>
-    <p>We may use aggregate, privacy-respecting analytics and crash-diagnostics tools to
-       understand how the App is used and to fix bugs. These tools do not receive your
-       Screen Time or app-selection data, and we use them only to improve the App.</p>
+    <p>To understand how the App is used and to fix bugs, OpenAd uses <strong>PostHog</strong>
+       product analytics. PostHog records in-app events — such as app opens, screens viewed,
+       and actions you take (for example, watching an ad or enabling reminders) — together
+       with an app-generated anonymous identifier and basic device and app information (such
+       as device model, OS version, and app version). This data is <strong>not linked to your
+       real-world identity, is not used to track you across other apps or websites, and never
+       includes your Screen Time or app-selection data</strong>. We use it only to improve the
+       App. PostHog processes this data on our behalf; see
+       <a href="https://posthog.com/privacy" rel="noopener">posthog.com/privacy</a>.</p>
 
     <h2>3. Third parties</h2>
     <table>
@@ -84,6 +96,8 @@
             <td><a href="https://www.apple.com/legal/privacy/" rel="noopener">apple.com/legal/privacy</a></td></tr>
         <tr><td>Liftoff Monetize (Vungle)</td><td>Rewarded ads</td>
             <td><a href="https://liftoff.io/privacy-policy/" rel="noopener">liftoff.io/privacy-policy</a></td></tr>
+        <tr><td>PostHog</td><td>Product analytics (app usage)</td>
+            <td><a href="https://posthog.com/privacy" rel="noopener">posthog.com/privacy</a></td></tr>
       </tbody>
     </table>
     <p class="muted">We may add or replace advertising, analytics, or infrastructure
