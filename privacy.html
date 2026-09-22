@@ -33,8 +33,8 @@
       <ul>
         <li><strong>No account required.</strong> The App works without registration or
             a login. We may offer optional account features in the future (see §6).</li>
-        <li><strong>Your data stays on your device.</strong> Your gated-app choices,
-            usage activity, and stats are stored only on your phone.</li>
+        <li><strong>Your Screen Time selections stay on your device.</strong> We do not
+            send your selected app, category, or website tokens to advertising or analytics providers.</li>
         <li><strong>Screen Time data is never transmitted</strong> to us or to advertisers.</li>
         <li><strong>Ads are served by third-party ad partners</strong>, which collect
             limited device data to show rewarded ads.</li>
@@ -56,10 +56,13 @@
        never shared with advertisers or any third party</strong>, consistent with
        Apple's App Store Review Guideline 5.1.2.</p>
 
-    <h3>b. Usage stats (on-device only)</h3>
-    <p>The App keeps simple counters — such as the number of unlocks and ads watched — to
-       show you on the dashboard. These never leave your device and are deleted when you
-       delete the App.</p>
+    <h3>b. Dashboard counters and app events</h3>
+    <p>The App stores its dashboard counters locally, including ads watched and times
+       you chose to stay blocked. It also sends product analytics events about OpenAd's
+       own features, such as starting or completing an unlock, the selected unlock
+       duration, and the number of rewarded ads completed. These events do not contain
+       the identities or selection tokens of the apps or websites you gate. See section
+       2(d) for analytics details.</p>
 
     <h3>c. Advertising data</h3>
     <p>Rewarded ads are delivered by third-party advertising partners. OpenAd currently
@@ -68,8 +71,11 @@
        <strong>Liftoff Monetize (Vungle)</strong> or Google AdMob. The advertising
        provider depends on the version installed. To serve and
        measure ads, an ad partner's SDK may collect limited information such as device
-       identifiers, IP address, coarse location, and ad-interaction data, as described in
-       that partner's privacy policy. <strong>We never provide ad partners with your
+       app-generated and device identifiers, IP address, approximate location,
+       ad impressions and interactions, device and connection information, and SDK
+       performance data. Unity also reports advertising-related purchase and conversion
+       information in its data disclosures. Data may be associated with an identifier
+       rather than your name, as described in the provider's privacy policy. <strong>We never provide ad partners with your
        Screen Time or app-selection data.</strong></p>
     <p>The Unity LevelPlay version requests restricted advertising processing and does
        not treat Apple's <strong>App Tracking Transparency</strong> permission as consent
@@ -82,12 +88,20 @@
     <p>To understand how the App is used and to fix bugs, OpenAd uses <strong>PostHog</strong>
        product analytics. PostHog records in-app events — such as app opens, screens viewed,
        and actions you take (for example, watching an ad or enabling reminders) — together
-       with an app-generated anonymous identifier and basic device and app information (such
-       as device model, OS version, and app version). This data is <strong>not linked to your
-       real-world identity, is not used to track you across other apps or websites, and never
-       includes your Screen Time or app-selection data</strong>. We use it only to improve the
+       with a persistent app-generated identifier and basic device and app information (such
+       as device model, OS version, and app version). Events can be associated with the same
+       installation; we do not provide PostHog with your name or account login. This analytics
+       data is <strong>not used to track you across other apps or websites and never includes
+       your selected app or website identities, Family Controls tokens, or activity reports
+       from Apple's Screen Time APIs</strong>. Session recording and automatic element
+       interaction capture are disabled. We use it only to improve the
        App. PostHog processes this data on our behalf; see
        <a href="https://posthog.com/privacy" rel="noopener">posthog.com/privacy</a>.</p>
+
+    <h3>e. Support requests</h3>
+    <p>If you email us or send feedback, we receive the contact details and message you
+       choose to send so we can respond. Please do not include sensitive information
+       that is unnecessary for your request.</p>
 
     <h2>3. Third parties</h2>
     <table>
