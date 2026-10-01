@@ -16,7 +16,7 @@
   </nav>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="muted"><strong>Effective date:</strong> June 24, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> September 21, 2026</p>
+    <p class="muted"><strong>Effective date:</strong> June 24, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> September 30, 2026</p>
 
     <p class="lede">OpenAd is built to help you use your phone more intentionally, so
        privacy is central to how it works. The app has no account and no server of ours
@@ -41,7 +41,10 @@
         <li><strong>We use privacy-respecting product analytics</strong> (PostHog) to count
             app opens and feature usage. It never receives your Screen Time data and isn't
             used to track you across other apps.</li>
-        <li><strong>We don't sell your personal data.</strong></li>
+        <li><strong>We don't sell your personal data for money.</strong> Ads are shown by advertising
+            partners, and some privacy laws count certain ad-related data sharing as a "sale" or
+            "sharing". OpenAd tells its ad partners that you opt out of that, by default. See
+            "Do Not Sell or Share My Personal Information" in section 2(c).</li>
       </ul>
     </div>
 
@@ -77,20 +80,35 @@
        information in its data disclosures. Data may be associated with an identifier
        rather than your name, as described in the provider's privacy policy. <strong>We never provide ad partners with your
        Screen Time or app-selection data.</strong></p>
-    <p>The Unity LevelPlay version requests restricted advertising processing and does
-       not treat Apple's <strong>App Tracking Transparency</strong> permission as consent
+    <p>By default, the Unity LevelPlay version requests restricted advertising processing, and it
+       never treats Apple's <strong>App Tracking Transparency</strong> permission as consent
        to personalized advertising. You can change tracking permission in iOS
        <em>Settings → Privacy &amp; Security → Tracking</em>. Ad partners may still process
        data to deliver ads, measure performance, and prevent fraud. Ads also use Apple's
        SKAdNetwork attribution.</p>
+    <p><strong>Do Not Sell or Share My Personal Information.</strong> OpenAd's Settings screen
+       has a switch with this name. It is on by default for everyone, wherever you live. While
+       it is on, OpenAd sends Unity LevelPlay and Unity Ads an opt-out signal before any ad is
+       requested, telling them not to sell your personal information or share it for
+       cross-context behavioral advertising. If you turn it off, OpenAd tells those partners
+       that you allow it, and they may use the advertising data described above to show you
+       more personalized ads, as described in their privacy policies. You can turn it back on
+       at any time, and a change applies to ads requested after it. OpenAd never sends those
+       partners consent to personalized advertising under the GDPR, whatever this switch says.
+       The switch doesn't change Apple's tracking permission, and OpenAd works the same either
+       way.</p>
 
     <h3>d. Diagnostics &amp; analytics</h3>
     <p>To understand how the App is used and to fix bugs, OpenAd uses <strong>PostHog</strong>
        product analytics. PostHog records in-app events — such as app opens, screens viewed,
        and actions you take (for example, watching an ad or enabling reminders) — together
        with a persistent app-generated identifier and basic device and app information (such
-       as device model, OS version, and app version). Events can be associated with the same
-       installation; we do not provide PostHog with your name or account login. This analytics
+       as device model, OS version, and app version). PostHog also works out an approximate
+       location (city and country) from your IP address. If you choose to answer "How did you
+       hear about OpenAd?", that answer is recorded too; the question is optional and shown
+       once. To test changes to OpenAd's block screen, PostHog may assign your installation
+       to a version of it and record which one, along with counts of how often you tapped
+       its buttons. Events can be associated with the same installation; we do not provide PostHog with your name or account login. This analytics
        data is <strong>not used to track you across other apps or websites and never includes
        your selected app or website identities, Family Controls tokens, or activity reports
        from Apple's Screen Time APIs</strong>. Session recording and automatic element
@@ -142,7 +160,11 @@
     <h2>7. Your rights</h2>
     <p>Depending on where you live (e.g. the EEA/UK under GDPR, or California under
        CCPA/CPRA), you may have rights regarding personal data, including access,
-       correction, deletion, and objection to certain processing. For questions or
+       correction, deletion, and objection to certain processing. If you live in California or
+       another US state with a similar law, you also have the right to opt out of the sale or
+       sharing of your personal information, and the right not to be treated differently for
+       using your privacy rights. OpenAd's opt-out is on by default: see "Do Not Sell or Share
+       My Personal Information" in section 2(c). For questions or
        requests relating to OpenAd or its service providers, contact us below.</p>
 
     <h2>8. Changes to this Policy and our Terms</h2>
